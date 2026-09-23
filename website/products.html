@@ -1,17 +1,114 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="JASS Digital Lab software and research tools."><title>Products — JASS Digital Lab</title><link rel="stylesheet" href="css/style.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="JASS Digital Lab product catalog — practical desktop software, AI tools, language research and developer utilities.">
+<title>Products — JASS Digital Lab</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<header class="nav"><a class="brand" href="index.html"><span class="brand-mark">J</span> JASS DIGITAL LAB</a><nav><a class="active" href="products.html">Products</a><a href="services.html">Services</a><a href="legacy.html">Legacy Lab</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact</a></nav></header>
+<div class="site-shell">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">J</span><span>JASS <b>Digital Lab</b></span></a>
+<nav><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="services.html">Services</a><a href="legacy.html">Legacy Lab</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact</a></nav>
+</header>
 <main>
-<section class="page-hero"><p class="eyebrow">PRODUCT CATALOG</p><h1>Useful software,<br><span>built with purpose.</span></h1><p class="lead">A growing collection of desktop applications, developer tools, research utilities and language projects.</p></section>
-<section class="section"><div class="product-grid">
-<article class="product-card"><span class="tag">DESKTOP</span><h3>File Organizer Pro</h3><p>Organize, inspect and manage large collections of files with a focused desktop workflow.</p><div class="meta">Windows · Python / PySide6</div><a href="contact.html">Learn more →</a></article>
-<article class="product-card"><span class="tag">DEVELOPER</span><h3>SQLite Explorer</h3><p>Explore SQLite databases through a practical desktop interface.</p><div class="meta">Windows · Linux</div><a href="contact.html">Learn more →</a></article>
-<article class="product-card"><span class="tag">DEVELOPER</span><h3>JSON Explorer</h3><p>Inspect and understand structured JSON data without unnecessary complexity.</p><div class="meta">Desktop utility</div><a href="contact.html">Learn more →</a></article>
-<article class="product-card"><span class="tag">MEDIA</span><h3>Universal File Converter</h3><p>A practical workspace for common document and media conversion tasks.</p><div class="meta">Desktop utility</div><a href="contact.html">Learn more →</a></article>
-<article class="product-card"><span class="tag">LANGUAGE</span><h3>Punjabi Aksharantar Explorer</h3><p>Explore Punjabi Roman–Gurmukhi transliteration data and language research.</p><div class="meta">Corpus · Research</div><a href="contact.html">Learn more →</a></article>
-<article class="product-card"><span class="tag">AI</span><h3>Project Athena</h3><p>Privacy-first personal knowledge and local-AI workspace.</p><div class="meta">Open-source project</div><a href="https://github.com/Fanu2/Project-Athena" target="_blank" rel="noopener">View on GitHub →</a></article>
+<section class="page-hero"><div class="eyebrow">SOFTWARE CATALOG</div>
+<h1>Tools built to <span>do useful work.</span></h1>
+<p>Explore practical desktop applications, AI workspaces, language research tools and developer utilities from the JASS Digital Lab.</p></section>
+<section class="catalog-toolbar"><div class="filter-wrap" id="filters">
+<button class="filter active" data-filter="all">All</button>
+<button class="filter" data-filter="AI & Knowledge">AI & Knowledge</button>
+<button class="filter" data-filter="Domain Software">Domain Software</button>
+<button class="filter" data-filter="Language & Research">Language & Research</button>
+<button class="filter" data-filter="Productivity">Productivity</button>
+<button class="filter" data-filter="Developer Tools">Developer Tools</button>
+<button class="filter" data-filter="Utilities">Utilities</button>
+<button class="filter" data-filter="Media Tools">Media Tools</button>
 </div></section>
-<section class="section dark" id="data"><p class="eyebrow">DATA & RESEARCH</p><h2>Language technology and structured knowledge.</h2><p class="wide-note">JASS projects include corpus databases, transliteration resources, language explorers and research-oriented desktop tools. Product licensing and redistribution terms will be defined individually as the catalog grows.</p></section>
+<section class="product-grid" id="product-grid"><article class="product-card reveal" data-category="AI & Knowledge">
+  <div class="product-top"><span class="product-icon">AI</span><span class="product-tag">Flagship</span></div>
+  <div class="product-category">AI & Knowledge</div>
+  <h2>Project Athena</h2>
+  <p>A privacy-first, offline knowledge and research workspace built around retrieval, documents, citations and local AI.</p>
+  <div class="product-bottom"><span>Active development</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Domain Software">
+  <div class="product-top"><span class="product-icon">DATA</span><span class="product-tag">Desktop</span></div>
+  <div class="product-category">Domain Software</div>
+  <h2>Haryana Revenue Toolkit</h2>
+  <p>A focused desktop toolkit for land records, Khewat, Khasra, ownership and Jamabandi workflows.</p>
+  <div class="product-bottom"><span>Mature project</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Language & Research">
+  <div class="product-top"><span class="product-icon">ਪੰਜਾਬੀ</span><span class="product-tag">Research</span></div>
+  <div class="product-category">Language & Research</div>
+  <h2>Punjabi Aksharantar Explorer</h2>
+  <p>A corpus exploration workspace for Punjabi Roman–Gurmukhi transliteration research and language data.</p>
+  <div class="product-bottom"><span>Research tool</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Language & Research">
+  <div class="product-top"><span class="product-icon">MIZO</span><span class="product-tag">Research</span></div>
+  <div class="product-category">Language & Research</div>
+  <h2>Mizo Corpus Explorer</h2>
+  <p>Explore Mizo language corpora, parallel data and linguistic resources through a practical desktop workflow.</p>
+  <div class="product-bottom"><span>Research tool</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Language & Media">
+  <div class="product-top"><span class="product-icon">ੴ</span><span class="product-tag">Desktop</span></div>
+  <div class="product-category">Language & Media</div>
+  <h2>JASS Gurbani Studio</h2>
+  <p>A desktop workspace for Gurbani-focused text, visual and media creation workflows.</p>
+  <div class="product-bottom"><span>Desktop application</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Productivity">
+  <div class="product-top"><span class="product-icon">FILES</span><span class="product-tag">Utility</span></div>
+  <div class="product-category">Productivity</div>
+  <h2>File Organizer Pro</h2>
+  <p>Practical file organization and cleanup tools designed for large personal folders and archives.</p>
+  <div class="product-bottom"><span>Utility application</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Developer Tools">
+  <div class="product-top"><span class="product-icon">SQL</span><span class="product-tag">Developer</span></div>
+  <div class="product-category">Developer Tools</div>
+  <h2>SQLite Explorer</h2>
+  <p>A desktop workspace for inspecting and working with SQLite databases without unnecessary complexity.</p>
+  <div class="product-bottom"><span>Developer utility</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Utilities">
+  <div class="product-top"><span class="product-icon">CONVERT</span><span class="product-tag">Utility</span></div>
+  <div class="product-category">Utilities</div>
+  <h2>Universal File Converter</h2>
+  <p>A practical conversion workspace for common document, media and data transformation tasks.</p>
+  <div class="product-bottom"><span>Utility application</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Media Tools">
+  <div class="product-top"><span class="product-icon">MEDIA</span><span class="product-tag">Desktop</span></div>
+  <div class="product-category">Media Tools</div>
+  <h2>Media Inventory</h2>
+  <p>Catalog and inspect media collections with a desktop-first inventory workflow.</p>
+  <div class="product-bottom"><span>Desktop application</span><a href="contact.html">Explore →</a></div>
+</article>
+<article class="product-card reveal" data-category="Media Tools">
+  <div class="product-top"><span class="product-icon">SRT</span><span class="product-tag">Creative</span></div>
+  <div class="product-category">Media Tools</div>
+  <h2>Subtitle Studio</h2>
+  <p>A practical subtitle workflow for SRT creation, subtitle images and video rendering.</p>
+  <div class="product-bottom"><span>Creative utility</span><a href="contact.html">Explore →</a></div>
+</article></section>
+<section class="catalog-note"><div><div class="eyebrow">CATALOG PRINCIPLE</div>
+<h2>One lab. Many practical tools.</h2>
+<p>Products are being developed as focused software rather than one oversized platform. That keeps each tool useful, maintainable and portable.</p></div>
+<a class="button" href="services.html">Need something custom? →</a></section>
 </main>
-<footer><span>© 2026 JASS Digital Lab</span><a href="index.html">Back to home</a></footer><script src="js/app.js"></script></body></html>
+<footer class="site-footer"><div><strong>JASS Digital Lab</strong><span>Practical software. Intelligent tools. Modern solutions.</span></div><span>© 2026 JASS Digital Lab</span></footer>
+</div>
+<script src="js/app.js"></script>
+<script>
+document.querySelectorAll(".filter").forEach(btn => btn.addEventListener("click", () => {
+ document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+ btn.classList.add("active"); const f=btn.dataset.filter;
+ document.querySelectorAll(".product-card").forEach(card => card.style.display=(f==="all"||card.dataset.category===f)?"":"none");
+}));
+</script>
+</body></html>

@@ -47,3 +47,8 @@ See `docs/DEPLOYMENT.md`.
 ## Portability
 
 See `docs/PORTABILITY.md`.
+
+
+## v0.2 — Product Catalog
+
+JASS Digital Lab now includes a structured product catalog with category filtering and product metadata stored under `data/products/`. The storefront remains static and provider-independent so commerce infrastructure can be added later.

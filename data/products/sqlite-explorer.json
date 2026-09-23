@@ -1,0 +1,9 @@
+{
+  "slug": "sqlite-explorer",
+  "name": "SQLite Explorer",
+  "category": "Developer Tools",
+  "tag": "Developer",
+  "description": "A desktop workspace for inspecting and working with SQLite databases without unnecessary complexity.",
+  "status": "Developer utility",
+  "accent": "SQL"
+}

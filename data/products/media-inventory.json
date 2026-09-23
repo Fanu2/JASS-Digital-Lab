@@ -1,0 +1,9 @@
+{
+  "slug": "media-inventory",
+  "name": "Media Inventory",
+  "category": "Media Tools",
+  "tag": "Desktop",
+  "description": "Catalog and inspect media collections with a desktop-first inventory workflow.",
+  "status": "Desktop application",
+  "accent": "MEDIA"
+}

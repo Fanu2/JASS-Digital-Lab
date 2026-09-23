@@ -1,0 +1,9 @@
+{
+  "slug": "project-athena",
+  "name": "Project Athena",
+  "category": "AI & Knowledge",
+  "tag": "Flagship",
+  "description": "A privacy-first, offline knowledge and research workspace built around retrieval, documents, citations and local AI.",
+  "status": "Active development",
+  "accent": "AI"
+}
