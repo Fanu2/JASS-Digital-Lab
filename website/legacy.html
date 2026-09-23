@@ -1,8 +1,116 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="JASS Legacy Software Lab — FoxPro, dBase, DBF and modernization."><title>Legacy Lab — JASS Digital Lab</title><link rel="stylesheet" href="css/style.css"></head>
-<body><header class="nav"><a class="brand" href="index.html"><span class="brand-mark">J</span> JASS DIGITAL LAB</a><nav><a href="products.html">Products</a><a href="services.html">Services</a><a class="active" href="legacy.html">Legacy Lab</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact</a></nav></header>
-<main><section class="page-hero"><p class="eyebrow">LEGACY SOFTWARE LAB</p><h1>Old systems.<br><span>Modern future.</span></h1><p class="lead">Practical modernization for FoxPro, dBase, DBF and other long-lived business applications and databases.</p></section>
-<section class="section dark"><div class="legacy-flow"><div>FoxPro / dBase / DBF</div><span>→</span><div>Assessment</div><span>→</span><div>Migration</div><span>→</span><div>Python / SQLite / PostgreSQL</div></div></section>
-<section class="section"><div class="two-col"><div><p class="eyebrow">THE APPROACH</p><h2>Preserve what works. Replace what no longer serves.</h2></div><div><p>Legacy modernization does not have to mean throwing away years of business knowledge. The first step is understanding the existing data, workflows, dependencies and operational requirements.</p><p>The destination can then be designed around maintainable technologies such as Python, PySide6, SQLite and PostgreSQL.</p></div></div></section>
-<section class="cta"><div><p class="eyebrow">LEGACY SYSTEM?</p><h2>Start with an assessment.</h2></div><a class="btn primary" href="contact.html">Discuss a Project</a></section>
-</main><footer><span>© 2026 JASS Digital Lab</span><a href="index.html">Back to home</a></footer><script src="js/app.js"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="JASS Digital Lab Legacy Software Lab — practical modernization of FoxPro, dBase, DBF and Windows-era business software.">
+<title>Legacy Software Lab — JASS Digital Lab</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.legacy-hero{padding:88px 0 72px;position:relative;overflow:hidden}
+.legacy-hero:after{content:"";position:absolute;width:620px;height:620px;right:-250px;top:-250px;border-radius:50%;background:radial-gradient(circle,rgba(255,171,82,.12),transparent 67%);pointer-events:none}
+.legacy-badge{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border-radius:999px;border:1px solid rgba(255,185,100,.22);background:rgba(255,170,80,.07);color:#ffd7a8;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.legacy-hero h1{font-size:clamp(48px,7.5vw,94px);line-height:.97;letter-spacing:-.055em;max-width:1000px;margin:22px 0}
+.legacy-hero h1 span{background:linear-gradient(110deg,#fff,#ffd09a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.legacy-lead{font-size:21px;line-height:1.7;color:#a8b4cc;max-width:800px}
+.legacy-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.legacy-section{padding:68px 0}
+.legacy-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#dca96c;margin-bottom:10px}
+.legacy-section h2{font-size:clamp(32px,4vw,54px);letter-spacing:-.035em;margin:0 0 15px}
+.legacy-intro{max-width:760px;color:#98a6bf;line-height:1.75;font-size:17px}
+.legacy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.legacy-card{padding:25px;border:1px solid rgba(255,255,255,.08);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));transition:.25s}
+.legacy-card:hover{transform:translateY(-4px);border-color:rgba(255,185,100,.25)}
+.legacy-card .label{font-size:11px;color:#dca96c;letter-spacing:.13em;text-transform:uppercase}
+.legacy-card h3{margin:15px 0 9px;font-size:21px}.legacy-card p{margin:0;color:#8997b0;line-height:1.65}
+.tech-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.tech{padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);color:#bdc8dc;font-size:13px}
+.modernize{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:35px}
+.flow-box{padding:30px;border:1px solid rgba(255,255,255,.08);border-radius:25px;background:rgba(255,255,255,.025)}
+.flow-box h3{margin-top:0;font-size:22px}
+.flow{display:grid;gap:10px;margin-top:22px}
+.flow-item{display:flex;align-items:center;gap:13px;padding:14px 16px;border-radius:13px;background:rgba(255,255,255,.035);color:#b9c4d8}
+.flow-item b{color:#f0b66e;font-size:11px;letter-spacing:.08em}
+.service-path{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+.path{padding:20px;border-radius:17px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.025)}
+.path strong{display:block;font-size:17px}.path span{display:block;margin-top:7px;color:#7f8da6;font-size:12px;line-height:1.5}
+.legacy-cta{margin:25px 0 80px;padding:42px;border-radius:28px;border:1px solid rgba(255,185,100,.18);background:linear-gradient(110deg,rgba(184,119,51,.12),rgba(255,255,255,.025));display:flex;justify-content:space-between;align-items:center;gap:30px}
+.legacy-cta h2{margin:0 0 8px;font-size:32px}.legacy-cta p{margin:0;color:#96a4bd}
+@media(max-width:850px){.legacy-grid{grid-template-columns:1fr 1fr}.modernize{grid-template-columns:1fr}.service-path{grid-template-columns:1fr 1fr}.legacy-cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.legacy-grid,.service-path{grid-template-columns:1fr}.legacy-hero{padding-top:55px}.legacy-lead{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">J</span><span>JASS <b>Digital Lab</b></span></a>
+<nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="services.html">Services</a><a class="active" href="legacy.html">Legacy Lab</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact</a></nav>
+</header>
+
+<main>
+<section class="legacy-hero">
+<div class="legacy-badge">◈ Legacy Software Lab</div>
+<h1>Preserve the software.<br><span>Modernize the platform.</span></h1>
+<p class="legacy-lead">A practical modernization capability for long-lived business applications, legacy databases and Windows-era workflows — with a path from FoxPro, dBase and DBF data toward Python, SQL and modern desktop software.</p>
+<div class="legacy-actions">
+<a class="button" href="contact.html">Discuss a legacy system →</a>
+<a class="button secondary" href="services.html">View Services</a>
+</div>
+</section>
+
+<section class="legacy-section">
+<div class="legacy-kicker">THE PROBLEM</div>
+<h2>Old software can still contain valuable business logic.</h2>
+<p class="legacy-intro">Replacing a legacy system does not have to mean throwing away decades of accumulated data, workflows and domain knowledge. The first step is understanding what exists, what must be preserved and what should be modernized.</p>
+<div class="legacy-grid">
+<article class="legacy-card"><span class="label">01 / Understand</span><h3>Inventory the system</h3><p>Identify applications, data files, dependencies, workflows, reports and operational requirements.</p></article>
+<article class="legacy-card"><span class="label">02 / Preserve</span><h3>Protect the data</h3><p>Work from the existing DBF and related data structures while establishing safe copies and migration paths.</p></article>
+<article class="legacy-card"><span class="label">03 / Modernize</span><h3>Build the next layer</h3><p>Move appropriate workflows toward Python, SQL, SQLite, PostgreSQL and modern PySide6 desktop interfaces.</p></article>
+</div>
+<div class="tech-strip">
+<span class="tech">FoxPro</span><span class="tech">Visual FoxPro</span><span class="tech">dBase</span><span class="tech">DBF</span><span class="tech">Python</span><span class="tech">SQL</span><span class="tech">SQLite</span><span class="tech">PostgreSQL</span><span class="tech">PySide6</span>
+</div>
+</section>
+
+<section class="legacy-section">
+<div class="legacy-kicker">MODERNIZATION PATH</div>
+<h2>From legacy data to maintainable software.</h2>
+<p class="legacy-intro">A staged approach reduces unnecessary disruption. Preserve first, understand second, modernize third.</p>
+<div class="modernize">
+<div class="flow-box"><h3>Legacy environment</h3><div class="flow">
+<div class="flow-item"><b>01</b> FoxPro / dBase application</div>
+<div class="flow-item"><b>02</b> DBF tables and indexes</div>
+<div class="flow-item"><b>03</b> Reports and business rules</div>
+<div class="flow-item"><b>04</b> Existing operational workflow</div>
+</div></div>
+<div class="flow-box"><h3>Modern target</h3><div class="flow">
+<div class="flow-item"><b>01</b> Python application layer</div>
+<div class="flow-item"><b>02</b> SQLite / PostgreSQL data layer</div>
+<div class="flow-item"><b>03</b> PySide6 desktop interface</div>
+<div class="flow-item"><b>04</b> Testable, documented workflow</div>
+</div></div>
+</div>
+</section>
+
+<section class="legacy-section">
+<div class="legacy-kicker">PRACTICAL WORKFLOW</div>
+<h2>A modernization project can be broken into clear stages.</h2>
+<div class="service-path">
+<div class="path"><strong>Discover</strong><span>Map applications, files, reports and business processes.</span></div>
+<div class="path"><strong>Extract</strong><span>Inspect and preserve legacy data and structures.</span></div>
+<div class="path"><strong>Modernize</strong><span>Implement selected workflows in Python and modern databases.</span></div>
+<div class="path"><strong>Validate</strong><span>Compare outputs, test workflows and document the transition.</span></div>
+</div>
+</section>
+
+<section class="legacy-cta">
+<div><div class="legacy-kicker">LEGACY SOFTWARE LAB</div><h2>Have an old application that still matters?</h2><p>Start with the system you have. Define the modernization path from there.</p></div>
+<a class="button" href="contact.html">Start a conversation →</a>
+</section>
+</main>
+
+<footer class="site-footer"><div><strong>JASS Digital Lab</strong><span>Practical software. Intelligent tools. Modern solutions.</span></div><span>© 2026 JASS Digital Lab</span></footer>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
