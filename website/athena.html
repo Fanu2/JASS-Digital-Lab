@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Project Athena — a privacy-first, offline knowledge and research workspace from JASS Digital Lab.">
+<title>Project Athena — JASS Digital Lab</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.athena-hero{padding:90px 0 70px;position:relative;overflow:hidden}
+.athena-hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-180px;top:-180px;background:radial-gradient(circle,rgba(104,129,255,.18),transparent 68%);pointer-events:none}
+.athena-badge{display:inline-flex;gap:9px;align-items:center;padding:9px 13px;border-radius:999px;border:1px solid rgba(142,168,255,.24);background:rgba(91,115,255,.08);color:#cbd6ff;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.athena-hero h1{font-size:clamp(52px,8vw,104px);line-height:.95;letter-spacing:-.055em;max-width:980px;margin:22px 0}
+.athena-hero h1 span{background:linear-gradient(110deg,#fff,#8ea8ff 65%,#b8c5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.athena-lead{font-size:21px;line-height:1.7;color:#a8b4cc;max-width:790px}
+.athena-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.athena-section{padding:70px 0}
+.section-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8096ff;margin-bottom:10px}
+.athena-section h2{font-size:clamp(32px,4vw,54px);letter-spacing:-.035em;margin:0 0 15px}
+.section-intro{max-width:730px;color:#98a6bf;line-height:1.75;font-size:17px}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.cap-card{padding:25px;border:1px solid rgba(255,255,255,.08);border-radius:22px;background:rgba(255,255,255,.025)}
+.cap-card .num{font-size:11px;color:#8096ff;letter-spacing:.12em}
+.cap-card h3{margin:16px 0 9px;font-size:21px}.cap-card p{margin:0;color:#8997b0;line-height:1.65}
+.architecture{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:35px}
+.arch-box{padding:30px;border-radius:24px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(145deg,rgba(91,115,255,.08),rgba(255,255,255,.02))}
+.arch-box pre{margin:0;color:#b8c5df;line-height:1.8;font:13px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap}
+.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+.milestone{padding:21px;border-left:2px solid rgba(128,150,255,.55);background:rgba(255,255,255,.025);border-radius:0 16px 16px 0}
+.milestone strong{display:block;font-size:18px}.milestone span{display:block;color:#7f8da6;font-size:12px;margin-top:6px;line-height:1.5}
+.flagship-cta{margin:30px 0 80px;padding:42px;border-radius:28px;border:1px solid rgba(142,168,255,.18);background:linear-gradient(110deg,rgba(91,115,255,.13),rgba(255,255,255,.025));display:flex;justify-content:space-between;gap:30px;align-items:center}
+.flagship-cta h2{margin:0 0 8px;font-size:32px}.flagship-cta p{margin:0;color:#96a4bd}
+@media(max-width:850px){.cap-grid{grid-template-columns:1fr 1fr}.architecture{grid-template-columns:1fr}.milestones{grid-template-columns:1fr 1fr}.flagship-cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.cap-grid,.milestones{grid-template-columns:1fr}.athena-hero{padding-top:55px}.athena-lead{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">J</span><span>JASS <b>Digital Lab</b></span></a>
+<nav><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="services.html">Services</a><a href="legacy.html">Legacy Lab</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact</a></nav>
+</header>
+
+<main>
+<section class="athena-hero">
+<div class="athena-badge">★ Flagship Technology</div>
+<h1>Project <span>Athena</span></h1>
+<p class="athena-lead">A privacy-first, offline knowledge and research workspace built around documents, retrieval, citations, workflows and local AI.</p>
+<div class="athena-actions">
+<a class="button" href="https://github.com/Fanu2/Project-Athena" target="_blank" rel="noopener">Explore on GitHub →</a>
+<a class="button secondary" href="products.html">← Back to Products</a>
+</div>
+</section>
+
+<section class="athena-section">
+<div class="section-kicker">THE IDEA</div>
+<h2>Build intelligence around your knowledge.</h2>
+<p class="section-intro">Athena is designed as a local-first personal knowledge system: an engineering platform for research, document intelligence, retrieval and workspace workflows, while keeping the core experience under the user's control.</p>
+<div class="cap-grid">
+<article class="cap-card"><span class="num">01 / KNOWLEDGE</span><h3>Research Workspace</h3><p>Organize knowledge, documents, sources and workflows into a coherent working environment.</p></article>
+<article class="cap-card"><span class="num">02 / RETRIEVAL</span><h3>Retrieval Intelligence</h3><p>Combine query planning, semantic retrieval and application-level orchestration for grounded research.</p></article>
+<article class="cap-card"><span class="num">03 / DOCUMENTS</span><h3>Document Intelligence</h3><p>Designed to integrate local document processing, OCR and structured extraction into the knowledge workflow.</p></article>
+<article class="cap-card"><span class="num">04 / LOCAL AI</span><h3>Local AI Providers</h3><p>Integrate local model runtimes such as Ollama and LM Studio through provider-oriented architecture.</p></article>
+<article class="cap-card"><span class="num">05 / CITATIONS</span><h3>Grounded Answers</h3><p>Retrieval and answer workflows are designed around traceable sources and citation-aware research.</p></article>
+<article class="cap-card"><span class="num">06 / WORKSPACE</span><h3>Workspace Intelligence</h3><p>Bring retrieval and context into the user's workspace instead of treating AI as an isolated chat box.</p></article>
+</div>
+</section>
+
+<section class="athena-section">
+<div class="section-kicker">ARCHITECTURE</div>
+<h2>Integration-first. Local-first.</h2>
+<p class="section-intro">Athena separates orchestration from infrastructure so local AI, document processing, vector stores and other components can evolve independently.</p>
+<div class="architecture">
+<div class="arch-box"><pre>Workspace
+   ↓
+Query / Workflow Services
+   ↓
+Retrieval Orchestration
+   ↓
+Provider Adapters
+   ├─ Local AI
+   ├─ Embeddings
+   ├─ Document Processing
+   └─ Vector / Data Stores</pre></div>
+<div class="arch-box"><pre>Knowledge
+   ↓
+Documents → Extraction
+   ↓
+Chunks / Metadata
+   ↓
+Indexing
+   ↓
+Semantic Retrieval
+   ↓
+Grounded Answer
+   ↓
+Citations + Workspace Context</pre></div>
+</div>
+</section>
+
+<section class="athena-section">
+<div class="section-kicker">ENGINEERING JOURNEY</div>
+<h2>Built in measurable stages.</h2>
+<p class="section-intro">Athena has evolved through structured engineering checkpoints, moving from a stable foundation toward AI control, document intelligence, retrieval intelligence and workspace intelligence.</p>
+<div class="milestones">
+<div class="milestone"><strong>A15</strong><span>Stabilization foundation</span></div>
+<div class="milestone"><strong>A16–A17</strong><span>AI Provider Platform & Control Center</span></div>
+<div class="milestone"><strong>A18–A19</strong><span>Document & Retrieval Intelligence</span></div>
+<div class="milestone"><strong>A20</strong><span>Workspace Intelligence & UI exposure</span></div>
+</div>
+</section>
+
+<section class="flagship-cta">
+<div><div class="section-kicker">JASS DIGITAL LAB FLAGSHIP</div><h2>Explore the Athena engineering project.</h2><p>Follow the source, architecture and ongoing development on GitHub.</p></div>
+<a class="button" href="https://github.com/Fanu2/Project-Athena" target="_blank" rel="noopener">Open Project Athena →</a>
+</section>
+</main>
+
+<footer class="site-footer"><div><strong>JASS Digital Lab</strong><span>Practical software. Intelligent tools. Modern solutions.</span></div><span>© 2026 JASS Digital Lab</span></footer>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
